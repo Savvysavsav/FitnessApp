@@ -1,0 +1,260 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="edu.niu.cs.z1693760.fitnessapp.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/imageView2"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:text="My Fitness App"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <!--View Data Button-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="false"
+            android:id="@+id/data_layout"
+            android:layout_marginTop="20dp"
+            android:showDividers="end"
+            android:onClick="dataClick">
+
+            <ImageView
+                app:srcCompat="@drawable/ic_show_chart_black_24dp"
+                android:id="@+id/imageView3"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:text="View My Data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:id="@+id/textView23"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <!--View Goals Button-->
+
+        <!--New Workout Button-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goals_layout"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/new_workout_layout"
+            android:onClick="newWorkoutClick">
+
+            <ImageView
+                app:srcCompat="@drawable/ic_directions_run_black_24dp"
+                android:id="@+id/imageViewv45"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:text="Start a New Workout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView233"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <!--Resume Workout Button-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_workout_layout"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/resume_workout_layout"
+            android:onClick="resumeWorkoutClick">
+
+            <ImageView
+                app:srcCompat="@drawable/ic_directions_run_black_24dp"
+                android:id="@+id/imageView45"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:text="Resume Workout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView233f"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <!--New Exercise Button-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resume_workout_layout"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/new_exercise_layout"
+            android:onClick="startExerciseClick">
+
+            <ImageView
+                app:srcCompat="@drawable/ic_directions_walk_black_24dp"
+                android:id="@+id/imageView45"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:text="Start One Exercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView2f33"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <!--Resume Exercise Button-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_exercise_layout"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/resume_exercise_layout"
+            android:onClick="resumeExerciseClick">
+
+            <ImageView
+                app:srcCompat="@drawable/ic_directions_walk_black_24dp"
+                android:id="@+id/imageView4f5"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:text="Resume Exercise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textViewf233"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goals_layout"
+            android:layout_below="@+id/data_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="goalsClick">
+
+            <ImageView
+                app:srcCompat="@drawable/ic_format_list_bulleted_black_24dp"
+                android:id="@+id/imageView4"
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:text="Manage My Goals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

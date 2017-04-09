@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="links">
+        <item>Home</item>
+        <item>View my Data</item>
+        <item>Manage My Goals</item>
+        <item>Start a New Workout</item>
+        <item>Resume My Workout</item>
+        <item>Start One Exercise</item>
+        <item>Resume My Exercise</item>
+    </string-array>
+</resources>
